@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" >
+
+    <title>Netflix Login Page </title>
+    <link rel="stylesheet" href="./Netflix Login Page/style.css">
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="./Netflix Login Page/images/logo.svg" alt="logo"></a>
+    </nav>
+    <div class="form-wrapper">
+        <h2>Sign In</h2>
+        <form action="#">
+            <div class="form-control">
+                <input type="email" required id="email">
+                <label>Email or phone number</label>
+            </div>
+            <div class="form-control">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit" onclick="signIn()">Sign In</button>
+            <div class="form-help"> 
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#">Need help?</a>
+            </div>
+        </form>
+        <script>
+            function signIn() {
+                // Get the value of the email input field
+                const email = document.getElementById('email').value;
+            
+                // Display an alert with the email input value
+                alert('Signing in with email: ' + email);
+            }
+            </script>
+        <p>New to Netflix? <a href="#">Sign up now</a></p>
+        <small>
+Coded By  Sai Mahendra.B
+        </small>
+    </div>
+</body>
+</html>
